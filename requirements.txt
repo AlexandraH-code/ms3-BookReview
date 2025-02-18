@@ -1,0 +1,7 @@
+asgiref==3.8.1
+Django==4.2.19
+django-crispy-forms==1.9.2
+psycopg2-binary==2.9.10
+pytz==2020.1
+sqlparse==0.4.1
+tzdata==2025.1
