@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-yapep!opdq=ac*!03p3a4_h$#&h%l8li^^l1)0s&je_5=qgo+l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.mysite.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.mysite.com', '.herokuapp.com']
 
 # Application definition
 
