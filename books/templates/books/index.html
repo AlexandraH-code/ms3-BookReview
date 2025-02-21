@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Home - BookReviews{% endblock %}
+{% block content %}
+<div class="jumbotron text-center">
+    <img src="/static/hero.jpg" class="img-fluid" alt="Bokrecensioner">
+    <h1 class="mt-3">Welcome to BookReviews!</h1>
+    <p>Discover and rate books!</p>
+    <a href="{% url 'books' %}" class="btn btn-primary">See books</a>
+</div>
+{% endblock %}

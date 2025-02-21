@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Books - BookReviews{% endblock %}
+{% block content %}
+<div class="row">
+    {% for book in books %}
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="{{ book.cover_image.url }}" class="card-img-top" alt="{{ book.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <p class="card-text">by {{ book.author }}</p>
+                    <a href="{% url 'book_detail' book.id %}" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from books.views import my_books
+# from books.views import my_books
+from books.views import books_list, book_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('books/', my_books, name='books'),
+    # path('books/', my_books, name='books'),
+    path('books/', books_list, name='books'),
+    path('books/<int:book_id>/', book_detail, name='book_detail'),
 ]
