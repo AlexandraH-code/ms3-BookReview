@@ -1,131 +1,373 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Book Review
 
-Welcome USER_NAME,
+Developer - Alexandra Holstensson
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Link to the project - Heroku]()
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+![Image Of The Site - Am I Responsive]()
 
-## Gitpod Reminders
+## [Table of Contents](#table-of-contents)
+1. [**About**](#about)
+2. [**User Goals**](#user-goals)
+  - [**External User Goals**](#external-user-goals)
+  - [**Site Owner Goals**](#site-owner-goals)
+3. [**User Stories**](#user-stories)
+4. [**Design Of The Website**](#4-design-of-the-website)
+  - [**Structure**](#structure)
+  - [**Wireframes**](#wireframes)
+    - [**Mobile Wireframes**](#mobile-wireframes)
+    - [**Tablet Wireframes**](#tablet-wireframes)
+    - [**Laptop/Desktop Wireframes**](#laptopdesktop-wireframes)
+  - [**Colors**](#colors)
+  - [**Fonts**](#fonts)
+  - [**Icons And Images**](#icons-and-images)
+5. [**Existing Features**](#5-existing-features)
+  - [**Register Account - User**](#register-account---user)
+  - [**Login - User**](#login---user)
+  - [**Logout - User**](#logout---user)
+  - [**Rate book - User**](#rate-book---user)
+  - [**Comment book - User**](#comment-book---user)
+  - [**Add book - Admin**](#add-book---admin)
+  - [**Add book - User**](#add-book---user)
+  - [**Approve comment - Admin**](#approve-comment---admin)
+  - [**Delete comment - Admin**](#delete-comment---admin)
+  - [**Edit comment - User**](#edit-comment---user)
+  - [**Delete comment - User**](#delete-comment---user)
+6. [**Features Left To Implement**](#6-features-left-to-implement)
+7. [**Technologies Used**](#7-technologies-used)
+  - [**Languages**](#languages)
+  - [**Programs And Other Resources**](#programs-and-other-resoures)
+8. [**Testing**](#8-testing)
+  - [**User Story Testing**](#user-story-testing)
+  - [**Manual Testing**](#manual-testing)
+    - [**Test - Register Account - User**](#test---register-account)
+    - [**Test - Login - User**](#test---login)
+    - [**Test - Logout - User**](#test---logout)
+    - [**Test - Rate book - User**](#test---rate-book)
+    - [**Test - Comment book - User**](#test---comment-book)
+    - [**Test - Add book - Admin**](#test---add-book---admin)
+    - [**Test - Add book - User**](#test---add-book---user)
+    - [**Test - Approve comment - Admin**](#approve-comment---admin)
+    - [**Test - Delete comment - Admin**](#delete-comment---admin)
+    - [**Test - Edit comment - User**](#edit-comment---user)
+    - [**Test - Delete comment - User**](#delete-comment---user)
+9. [**Bugs**](#bugs)
+10. [**Validation**](#validation)
+  - [**HTML**](#html)
+  - [**CSS**](#css)
+  - [**JavaScript**](#javascript)
+  - [**Python**](#python)
+11. [**Lighthouse Testing**](#lighthouse-testing)
+  - [**Desktop**](#desktop)
+  - [**Mobile**](#mobile)
+12. [**Device Testing**](#device-testing)
+13. [**Browser Compatibility**](#browser-compatibility)
+14. [**Deployment**](#deployment)
+  - [**Local Deployment**]
+  - [**Remote Deployment**]
+15. [**Credits**](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## 1. About
+[Back To The Top](#table-of-contents)
 
-`python3 -m http.server`
+## 2. User Goals
+[Back To The Top](#table-of-contents)
+### Site Owner Boals
+### External User Goals
 
-A blue button should appear to click: _Make Public_,
+## 3. User Stories
+[Back To The Top](#table-of-contents)
 
-Another blue button should appear to click: _Open Browser_.
+## 4. Design Of The Website
+[Back To The Top](#table-of-contents)
+### Structure
+### Wireframes
+I have used Balsamiq to make the tireframes. The wireframes show how I have thought that the site should look.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+#### Mobile Wireframes
 
-A blue button should appear to click: _Make Public_,
+  <details>
+  <summary>Home Page - Not Logged In</summary>
 
-Another blue button should appear to click: _Open Browser_.
+  ![Home Page - Not Logged In](docs\wireframes\mobile\Homepage-not_logged_in.png)
+  
+  </details>
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  <details>
+  <summary>Home Page - Logged In</summary>
 
-To log into the Heroku toolbelt CLI:
+  ![Home Page - Logged In](docs\wireframes\mobile\Homepage-logged_in.png)
+  
+  </details>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  <details>
+  <summary>Books - Not Logged In</summary>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+  ![Books - Not Logged In](docs\wireframes\mobile\Books_not_logged_in.png)
+  
+  </details>
 
-### Connecting your Mongo database
+  <details>
+  <summary>Book Details - Not logged In</summary>
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+  ![Book Details - Not logged In](docs\wireframes\mobile\Book_detail_not_logged_in.png)
+  
+  </details>
 
-------
+  <details>
+  <summary>Book Details - Logged In</summary>
 
-## Release History
+  ![Book Details - Logged In](docs\wireframes\mobile\Book_detail_logged_in.png)
+  
+  </details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  <details>
+  <summary>About</summary>
 
-**June 18, 2024,** Add Mongo back into template
+  ![About](docs\wireframes\mobile\About.png)
+  
+  </details>
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+  <details>
+  <summary>Register Account</summary>
 
-**May 28 2024:** Fix Mongo and Links installs
+  ![Register Account](docs\wireframes\mobile\Register_account.png)
+  
+  </details>
 
-**April 26 2024:** Update node version to 16
+  <details>
+  <summary>Login</summary>
 
-**September 20 2023:** Update Python version to 3.9.17.
+  ![Login](docs\wireframes\mobile\Login.png)
+  
+  </details>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  <details>
+  <summary>Logout</summary>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  ![Logout](docs\wireframes\mobile\Logout.png)
+  
+  </details>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Tablet Wireframes
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  <details>
+  <summary>Home Page - Not Logged In</summary>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  ![Home Page - Not Logged In](docs\wireframes\tablet\Homepage_not_logged_in.png)
+  
+  </details>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  <details>
+  <summary>Home Page - Logged In</summary>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  ![Home Page - Logged In](docs\wireframes\tablet\Homepage_logged_in.png)
+  
+  </details>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  <details>
+  <summary>Books - Not Logged In</summary>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  ![Books - Not Logged In](docs\wireframes\tablet\Books_not_logged_in.png)
+  
+  </details>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  <details>
+  <summary>Book Details - Not logged In</summary>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  ![Book Details - Not logged In](docs\wireframes\tablet\Book_detail_not_logged_in.png)
+  
+  </details>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  <details>
+  <summary>Book Details - Logged In</summary>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  ![Book Details - Logged In](docs\wireframes\tablet\Book_detail_logged_in.png)
+  
+  </details>
 
-------
+  <details>
+  <summary>About</summary>
 
-## FAQ about the uptime script
+  ![About](docs\wireframes\tablet\About.png)
+  
+  </details>
 
-**Why have you added this script?**
+  <details>
+  <summary>Register Account</summary>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  ![Register Account](docs\wireframes\tablet\Register_account.png)
+  
+  </details>
 
-**How will this affect me?**
+  <details>
+  <summary>Login</summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  ![Login](docs\wireframes\tablet\Login.png)
+  
+  </details>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+  <details>
+  <summary>Logout</summary>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  ![Logout](docs\wireframes\tablet\Logout.png)
+  
+  </details>
 
-**So….?**
+#### Laptop/Desktop Wireframes
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+  <details>
+  <summary>Home Page - Not Logged In</summary>
 
-**Can I opt out?**
+  ![Home Page - Not Logged In](docs\wireframes\laptop_desktop\Homepage_not_logged_in.png)
+  
+  </details>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+  <details>
+  <summary>Home Page - Logged In</summary>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+  ![Home Page - Logged In](docs\wireframes\laptop_desktop\Homepage_logged_in.png)
+  
+  </details>
 
-**Anything more?**
+  <details>
+  <summary>Books - Not Logged In</summary>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  ![Books - Not Logged In](docs\wireframes\laptop_desktop\Books_not_logged_in.png)
+  
+  </details>
 
----
+  <details>
+  <summary>Book Details - Not logged In</summary>
 
-Happy coding!
+  ![Book Details - Not logged In](docs\wireframes\laptop_desktop\Book_detail_not_logged_in.png)
+  
+  </details>
+
+  <details>
+  <summary>Book Details - Logged In</summary>
+
+  ![Book Details - Logged In](docs\wireframes\laptop_desktop\Book_detail_logged_in.png)
+  
+  </details>
+
+  <details>
+  <summary>About</summary>
+
+  ![About](docs\wireframes\laptop_desktop\About.png)
+  
+  </details>
+
+  <details>
+  <summary>Register Account</summary>
+
+  ![Register Account](docs\wireframes\laptop_desktop\Register_account.png)
+  
+  </details>
+
+  <details>
+  <summary>Login</summary>
+
+  ![Login](docs\wireframes\laptop_desktop\Login.png)
+  
+  </details>
+
+  <details>
+  <summary>Logout</summary>
+
+  ![Logout](docs\wireframes\laptop_desktop\Logout.png)
+  
+  </details>
+
+### Colors
+### Fonts
+### Icons and Images
+
+## 5. Existing Features
+[Back To The Top](#table-of-contents)
+### Register Account - User
+### Login - User
+### Logout - User
+### Rate book - User
+### Comment book - User
+### Add book - Admin
+### Add book - User
+### Approve comment - Admin
+### Delete comment - Admin
+### Edit comment - User
+### Delete comment - User
+
+## 6. Features Left To Implement
+[Back To The Top](#table-of-contents)
+
+## 7. Technologies Used
+[Back To The Top](#table-of-contents)
+### Languages
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+### Programs And Other Resoures
+- [Responsinator](http://www.responsinator.com/) - Used to check how the site looks on different devices and how responsive it is
+- [Am I Responsive](https://ui.dev/amiresponsive) - Used to check how the site looks on different devices and how responsive it is
+- [tinypng](https://tinypng.com/) - Used to compress images
+- [HTML Validator](https://validator.w3.org/nu/) - Used to validate the HTML files
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate the JavaScript code
+- [Site24x7's JavaScript validator](https://www.site24x7.com/tools/javascript-validator.html) - Used to validate the JavaScript code
+- [JShint](https://jshint.com/) - Used to validate the JavaScript Code
+- [Open Clipart](https://openclipart.org/) - The image of the shopping basket can be found here
+- [Favicon](https://favicon.io/favicon-converter/) - Used to generate the favicon
+- [Fontawsome](https://fontawesome.com/) - For the shopping basket icon
+- [Happy Hues](https://www.happyhues.co/) - for the color palette that I have chosen to use  
+- [ColorSpace](https://mycolor.space/) - to find a color gradient to the background color on my shopping list function
+- [ColorMagic Contrast Checker](https://colormagic.app/contrast-checker) - to check the constrast of the colors that I have chosen
+- [Easils font pairing guide](https://about.easil.com/free-font-pairing-guide-templates/) - to find the fonts that I have chosen to use
+- [Google Fonts](https://fonts.google.com/) - to download the fonts that I have chosen to use (Cookie and Roboto)
+- [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - to find breakpoints for different devices
+
+## 8. Testing
+[Back To The Top](#table-of-contents)
+### User Story Testing
+### Manual Testing
+#### Test - Register Account - User
+#### Test - Login - User
+#### Test - Logout - User 
+#### Test - Rate Book - User
+#### Test - Comment Book - User
+#### Test - Add Book - Admin
+#### Test - Add Book - User
+#### Test - Approve Comment - Admin
+#### Test - Delete Coment - Admin
+#### Test - Edit Comment - User
+#### Test - Delete COmment - User
+
+## 9. Bugs
+[Back To The Top](#table-of-contents)
+
+## 10. Validation
+[Back To The Top](#table-of-contents)
+### HTML
+### CSS
+### JavaScript
+### Python
+
+## 11. Lighthouse Testing
+[Back To The Top](#table-of-contents)
+### Desktop
+### Mobile
+
+## 12. Device Testing
+[Back To The Top](#table-of-contents)
+
+## 13. Browser Compatibility
+[Back To The Top](#table-of-contents)
+
+## 14. Deployment
+[Back To The Top](#table-of-contents)
+### Local Deployment
+### Remote Deployment
+
+## 15. Credits 
+[Back To The Top](#table-of-contents)
+
+

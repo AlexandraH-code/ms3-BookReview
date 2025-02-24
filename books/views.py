@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Book, Review  # Import the models
 from django.http import HttpResponse
+from django.views import generic
 
 
 # Create your views here.
 def my_books(request):
     return HttpResponse("Hello, Books!")
+
 
 
 def books_list(request):
